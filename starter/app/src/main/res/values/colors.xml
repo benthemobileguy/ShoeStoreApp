@@ -2,7 +2,7 @@
 <resources>
     <color name="bg_dark_red_bg">#bc1823</color>
     <color name="colorPrimaryLight">#FFE3A0</color>
-    <color name="colorPrimary">#FF9C00</color>
+    <color name="colorPrimary">#E5C0EC</color>
     <color name="colorPrimaryDark">#e58a02</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
@@ -14,4 +14,8 @@
     <color name="divider_color">#CCCCCC</color>
     <color name="shadowColor">#EFE5E5</color>
     <color name="customWhite">#FAF6F6</color>
+    <color name="buttonColor">#673AB7</color>
+    <color name="editTextColor">#FBF8F8</color>
+    <color name="purpleText">#2A0A61</color>
+    <color name="headerPurpleText">#673AB7</color>
 </resources>

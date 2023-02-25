@@ -16,6 +16,7 @@
             android:layout_height="wrap_content"
             android:textSize="24sp"
             android:id="@+id/myShoeTitle"
+            android:fontFamily="@font/axiforma"
             android:layout_alignParentTop="true"
             android:text="@string/my_shoes"
             android:layout_centerHorizontal="true"

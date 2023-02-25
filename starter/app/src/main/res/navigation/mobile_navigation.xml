@@ -9,22 +9,38 @@
         android:id="@+id/instructionsScreen"
         android:name="com.udacity.shoestore.InstructionsScreen"
         android:label="fragment_instructions"
-        tools:layout="@layout/fragment_instructions" />
+        tools:layout="@layout/fragment_instructions" >
+        <action
+            android:id="@+id/action_instructionsScreen_to_shoeListingFragment"
+            app:destination="@id/shoeListingFragment" />
+    </fragment>
     <fragment
         android:id="@+id/loginFragment"
         android:name="com.udacity.shoestore.LoginFragment"
         android:label="fragment_login"
-        tools:layout="@layout/fragment_login" />
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_welcomeFragment"
+            app:destination="@id/welcomeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/shoeListingFragment"
         android:name="com.udacity.shoestore.ShoeListingFragment"
         android:label="fragment_shoe_listing"
-        tools:layout="@layout/fragment_shoe_listing" />
+        tools:layout="@layout/fragment_shoe_listing" >
+        <action
+            android:id="@+id/action_shoeListingFragment_to_shoeDetailsFragment"
+            app:destination="@id/shoeDetailsFragment" />
+    </fragment>
     <fragment
         android:id="@+id/welcomeFragment"
         android:name="com.udacity.shoestore.WelcomeFragment"
         android:label="fragment_welcome"
-        tools:layout="@layout/fragment_welcome" />
+        tools:layout="@layout/fragment_welcome" >
+        <action
+            android:id="@+id/action_welcomeFragment_to_instructionsScreen"
+            app:destination="@id/instructionsScreen" />
+    </fragment>
     <fragment
         android:id="@+id/shoeDetailsFragment"
         android:name="com.udacity.shoestore.ShoeDetailsFragment"

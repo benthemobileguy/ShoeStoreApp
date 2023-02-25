@@ -1,14 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".LoginFragment">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_margin="0dp"
+        android:background="@color/colorPrimary"
+        android:padding="20dp">
 
-</FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/emailTitle"
+            android:fontFamily="@font/inter_medium"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/emailInput"
+            app:layout_constraintStart_toStartOf="@+id/emailInput"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.952" />
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:fontFamily="@font/axiforma"
+            android:text="@string/LoginTitle"
+            android:textColor="@color/btnColor"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/password"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/textColor"
+            app:layout_constraintBottom_toTopOf="@+id/passwordInput"
+            app:layout_constraintStart_toStartOf="@+id/passwordInput"
+            app:layout_constraintTop_toBottomOf="@+id/emailInput"
+            app:layout_constraintVertical_bias="0.625" />
+
+        <EditText
+            android:id="@+id/emailInput"
+            android:layout_width="354dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="80dp"
+            android:background="#FAF6F6"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:shadowColor="@color/shadowColor"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/titleText" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="354dp"
+            android:layout_height="52dp"
+            android:layout_marginTop="56dp"
+            android:background="#FBF8F8"
+            android:ems="10"
+            android:inputType="textPassword"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/emailInput" />
+
+        <Button
+            android:id="@+id/signInButton"
+            android:layout_width="228dp"
+            android:layout_height="66dp"
+            android:layout_marginBottom="140dp"
+            android:background="@color/btnColor"
+            android:text="@string/sign_in"
+            android:textColor="#F6F2F2"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/passwordInput"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/signUpText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_bold"
+            android:text="Create new Account ?"
+            android:textColor="@color/customWhite"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/signInButton"
+            app:layout_constraintVertical_bias="0.166" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+</layout>

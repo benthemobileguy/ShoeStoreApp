@@ -16,6 +16,7 @@ import androidx.navigation.fragment.findNavController
 import com.udacity.shoestore.databinding.FragmentShoeListingBinding
 import com.udacity.shoestore.models.ShoeListViewModel
 
+
 class ShoeListingFragment : Fragment(R.layout.fragment_shoe_listing) {
 
 
@@ -85,15 +86,21 @@ class ShoeListingFragment : Fragment(R.layout.fragment_shoe_listing) {
                 val _company = TextView(this.context)
                 _company.text = item.company
                 val _description = TextView(this.context)
+                val typefaceBold = resources.getFont(R.font.inter_bold)
+                val typefaceBold = resources.getFont(R.font.inter_medium)
                 _description.text = item.description
                 _name.setTextColor(Color.parseColor("#504359"))
                 _size.setTextColor(Color.parseColor("#504359"))
                 _company.setTextColor(Color.parseColor("#504359"))
                 _description.setTextColor(Color.parseColor("#504359"))
-                _name.textSize= 20F
+                _name.textSize= 18F
                 _size.textSize=16F
                 _company.textSize=16F
                 _description.textSize=16F
+                _name.setTypeface(typefaceBold)
+                _size.setTypeface(typefaceBold)
+                _company.setTypeface(typefaceBold)
+                _description.setTypeface(typefaceBold)
                 val parentLayout = LinearLayout(this.context)
                 val params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT

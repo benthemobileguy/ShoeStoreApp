@@ -3,7 +3,7 @@
     <color name="bg_dark_red_bg">#bc1823</color>
     <color name="colorPrimaryLight">#FFE3A0</color>
     <color name="colorPrimary">#E5C0EC</color>
-    <color name="colorPrimaryDark">#e58a02</color>
+    <color name="colorPrimaryDark">#E5C0EC</color>
     <color name="colorAccent">#D81B60</color>
     <color name="colorWhite">#FFFFFF</color>
     <color name="btnColor">#130C01</color>

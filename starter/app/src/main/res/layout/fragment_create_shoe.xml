@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="ShoeViewModel"
+            type="com.udacity.shoestore.models.ShoeListViewModel" />
+    </data>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="40dp"
+        tools:context=".models.CreateShoeFragment"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:fontFamily="@font/inter_bold"
+            android:text="@string/createShoeTitle"
+            android:layout_gravity="center_horizontal"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/shoeName" />
+
+        <EditText
+            android:id="@+id/nameBox"
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/shoeCompany" />
+
+        <EditText
+            android:id="@+id/companyBox"
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/shoeSize" />
+
+        <EditText
+            android:id="@+id/sizeBox"
+            android:fontFamily="@font/inter_medium"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </EditText>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/inter_medium"
+            android:text="@string/shoeDescription" />
+
+        <EditText
+            android:id="@+id/descriptionBox"
+            android:layout_width="match_parent"
+            android:fontFamily="@font/inter_medium"
+            android:layout_height="wrap_content">
+
+        </EditText>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            >
+
+            <Button
+                android:id="@+id/saveButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:background="@color/colorPrimary"
+                android:text="@string/Save"
+                android:textColor="#390E85" />
+
+            <Button
+                android:id="@+id/cancelButton"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:background="@color/colorPrimary"
+                android:text="@string/cancel"
+                android:textColor="#390E85" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</layout>

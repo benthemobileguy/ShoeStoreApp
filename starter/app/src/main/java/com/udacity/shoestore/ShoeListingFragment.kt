@@ -87,7 +87,7 @@ class ShoeListingFragment : Fragment(R.layout.fragment_shoe_listing) {
                 _company.text = item.company
                 val _description = TextView(this.context)
                 val typefaceBold = resources.getFont(R.font.inter_bold)
-                val typefaceBold = resources.getFont(R.font.inter_medium)
+                val typefaceMedium = resources.getFont(R.font.inter_medium)
                 _description.text = item.description
                 _name.setTextColor(Color.parseColor("#504359"))
                 _size.setTextColor(Color.parseColor("#504359"))
@@ -98,9 +98,9 @@ class ShoeListingFragment : Fragment(R.layout.fragment_shoe_listing) {
                 _company.textSize=16F
                 _description.textSize=16F
                 _name.setTypeface(typefaceBold)
-                _size.setTypeface(typefaceBold)
-                _company.setTypeface(typefaceBold)
-                _description.setTypeface(typefaceBold)
+                _size.setTypeface(typefaceMedium)
+                _company.setTypeface(typefaceMedium)
+                _description.setTypeface(typefaceMedium)
                 val parentLayout = LinearLayout(this.context)
                 val params: LinearLayout.LayoutParams = LinearLayout.LayoutParams(
                     LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT

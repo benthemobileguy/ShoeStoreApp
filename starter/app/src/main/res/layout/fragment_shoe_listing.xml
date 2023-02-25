@@ -2,27 +2,32 @@
 <layout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <data>
         <variable
             name="ShoeViewModel"
             type="com.udacity.shoestore.models.ShoeListViewModel" />
     </data>
-
-    <RelativeLayout
+    <!-- ConstraintLayout is used here to position the child views in a flexible and responsive way. -->
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ScrollView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp">
+            android:id="@+id/shoeListScrollView"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/createShoeButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
             <LinearLayout
                 android:id="@+id/shoeListView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
-            </LinearLayout>
+                android:orientation="vertical" />
         </ScrollView>
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -30,13 +35,16 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:clickable="true"
-            app:backgroundTint="@color/buttonColor"
-            android:src="@drawable/ic_add"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentEnd="true"
-            android:layout_gravity="end|bottom"
-            android:layout_margin="20dp"
             android:contentDescription="@string/createButtontext"
-            android:focusable="true" />
-    </RelativeLayout>
+            android:focusable="true"
+            android:src="@drawable/ic_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintVertical_bias="1.0"
+            app:backgroundTint="@color/buttonColor"
+            android:layout_margin="20dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

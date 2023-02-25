@@ -7,7 +7,7 @@
             name="ShoeViewModel"
             type="com.udacity.shoestore.models.ShoeListViewModel" />
     </data>
-
+    <!-- LinearLayout is used here to display a simple vertical list of text views, edit texts and action button -->
 
     <LinearLayout
         android:layout_width="match_parent"

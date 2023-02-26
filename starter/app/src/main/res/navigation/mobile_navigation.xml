@@ -58,9 +58,9 @@
     </fragment>
     <fragment
         android:id="@+id/createShoeFragment"
-        android:name="com.udacity.shoestore.CreateShoeFragment"
+        android:name="com.udacity.shoestore.ShoeDetailFragment"
         android:label="fragment_create_shoe"
-        tools:layout="@layout/fragment_create_shoe" >
+        tools:layout="@layout/fragment_shoe_detail" >
         <action
             android:id="@+id/action_createShoeFragment_to_shoeListingFragment"
             app:destination="@id/shoeListingFragment" />

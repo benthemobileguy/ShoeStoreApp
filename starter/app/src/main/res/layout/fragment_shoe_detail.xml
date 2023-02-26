@@ -5,7 +5,7 @@
     <data>
         <variable
             name="ShoeViewModel"
-            type="com.udacity.shoestore.models.ShoeListViewModel" />
+            type="com.udacity.shoestore.models.ShoeDetailViewModel" />
     </data>
     <!-- LinearLayout is used here to display a simple vertical list of text views, edit texts and action button -->
 
@@ -33,6 +33,7 @@
 
         <EditText
             android:id="@+id/nameBox"
+            android:text="@={ShoeViewModel.shoeName}"
             android:fontFamily="@font/inter_medium"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -46,6 +47,7 @@
             android:text="@string/shoeCompany" />
 
         <EditText
+            android:text="@={ShoeViewModel.shoeCompany}"
             android:id="@+id/companyBox"
             android:fontFamily="@font/inter_medium"
             android:layout_width="match_parent"
@@ -60,6 +62,7 @@
             android:text="@string/shoeSize" />
 
         <EditText
+            android:text="@={ShoeViewModel.shoeSize}"
             android:id="@+id/sizeBox"
             android:fontFamily="@font/inter_medium"
             android:layout_width="match_parent"
@@ -74,6 +77,7 @@
             android:text="@string/shoeDescription" />
 
         <EditText
+            android:text="@={ShoeViewModel.shoeDescription}"
             android:id="@+id/descriptionBox"
             android:layout_width="match_parent"
             android:fontFamily="@font/inter_medium"

@@ -21,4 +21,19 @@
     <string name="sign_in">Sign In</string>
     <string name="let_s_get_started">Let\'s get Started</string>
     <string name="my_shoes">My Shoes</string>
+    <!-- Shoe list -->
+    <string name="shoe_list">Shoe List</string>
+    <string name="empty_list">No shoes to display.</string>
+    <string name="shoe_name">Shoe name</string>
+    <string name="shoe_company">Company: %s</string>
+    <string name="shoe_size">Shoe size: %.1f</string>
+    <string name="shoe_description">Description: %s</string>
+
+    <!-- Shoe detail -->
+    <string name="shoe_detail">Shoe Detail</string>
+    <string name="shoe_detail_company">Company</string>
+    <string name="shoe_detail_size">Shoe size</string>
+    <string name="shoe_detail_description">Description</string>
+    <string name="save">Save</string>
+    <string name="empty_fields_warning">Please fill all fields</string>
 </resources>
